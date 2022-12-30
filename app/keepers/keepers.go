@@ -217,6 +217,7 @@ func NewAppKeeper(
 		appCodec,
 		appKeepers.keys[stakingtypes.StoreKey],
 		appKeepers.AccountKeeper,
+		appKeepers.AuthzKeeper,
 		appKeepers.BankKeeper,
 		appKeepers.GetSubspace(stakingtypes.ModuleName),
 	)
